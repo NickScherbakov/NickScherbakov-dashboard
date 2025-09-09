@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NickScherbakov - GitHub Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        .chart-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .repos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        .repos-table th, .repos-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .repos-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+        .update-time {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 NickScherbakov</h1>
+            <p>GitHub Repositories Market Dashboard</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>6</h3>
+                <p>Tracked Repositories</p>
+            </div>
+            <div class="stat-card">
+                <h3>500,904</h3>
+                <p>Total Stars</p>
+            </div>
+            <div class="stat-card">
+                <h3>83,484</h3>
+                <p>Average Stars</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>📊 Market Overview</h2>
+            <img src="charts/overview.png" alt="Market Overview Chart">
+        </div>
+
+        <div class="chart-container">
+            <h2>🏷️ Popular Languages</h2>
+            <img src="charts/languages.png" alt="Languages Chart">
+        </div>
+
+        <h2>🔝 Top Repositories</h2>
+        <table class="repos-table">
+            <thead>
+                <tr>
+                    <th>Repository</th>
+                    <th>Owner</th>
+                    <th>Stars</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://github.com/facebook/react" target="_blank">react</a></td>
+                    <td>facebook</td>
+                    <td>⭐ 238,778</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/microsoft/vscode" target="_blank">vscode</a></td>
+                    <td>microsoft</td>
+                    <td>⭐ 176,538</td>
+                    <td>TypeScript</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/swiftlang/swift" target="_blank">swift</a></td>
+                    <td>swiftlang</td>
+                    <td>⭐ 69,005</td>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/Netflix/zuul" target="_blank">zuul</a></td>
+                    <td>Netflix</td>
+                    <td>⭐ 13,884</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/twilio/twilio-python" target="_blank">twilio-python</a></td>
+                    <td>twilio</td>
+                    <td>⭐ 1,992</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/stripe/stripe-js" target="_blank">stripe-js</a></td>
+                    <td>stripe</td>
+                    <td>⭐ 707</td>
+                    <td>TypeScript</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="update-time">
+            📅 Last update: 2025-09-09 18:53 UTC
+        </div>
+    </div>
+</body>
+</html>
