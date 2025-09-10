@@ -23,3 +23,15 @@ coverage.xml
 node_modules/
 charts/*.png
 !charts/.gitkeep
+
+# Self-hosted runner specific files
+runner-env/
+actions-runner/
+_diag/
+.runner
+.credentials
+.credentials_rsaparams
+
+# Temporary test files
+/tmp/
+*.tmp
